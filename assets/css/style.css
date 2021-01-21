@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 1.2em;
+    background-color: #fff;
+    color: #555;
+}
+
 .header {
     background-color: darkslateblue;
     height: 177px;
@@ -92,11 +98,11 @@
 }
 
 .sidebar_container {
-    width: 224px;
+    width: 246px;
 }
 
 .sidebar {
-    width: 222px;
+    width: 246px;
     padding: 5%;
     margin: 0 0 16px 0;
     border: solid 1px #f2f2f2;
@@ -105,7 +111,7 @@
 }
 
 .sidebar_title {
-    font: normal 170% 'century gothic', Arial, sans-serif;
+    font: normal 140% 'century gothic', Arial, sans-serif;
     margin: 0 0 15px 0;
     padding: 15px 0 5px 0;
     color: #136cb2;
@@ -138,4 +144,22 @@
     outline: none;
     text-decoration: underline;
     color: #aeb002;
+}
+
+.sidebar_news {
+    padding: 0 0 20px 0;
+    line-height: 1.7em;
+}
+
+.sidebar_raining {
+    margin: 2px 0 22px 17px;
+}
+
+.sidebar_raiting-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 6px 0;
+    list-style: none;
+    padding: 0 0 4px 5px;
+    line-height: 1.5em;
 }
