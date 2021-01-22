@@ -88,9 +88,19 @@ body {
     color: #e4ec04;
 }
 
+.link {
+    outline: none;
+    text-decoration: none;
+    color: #aeb002;
+}
+.link--sidebar{
+    text-decoration: underline;
+}
+
 .site_content {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     width: 880px;
     overflow: hidden;
     margin: 20px auto 0 auto;
@@ -140,11 +150,7 @@ body {
     margin-left: 2%;
 }
 
-.sidebar_link {
-    outline: none;
-    text-decoration: underline;
-    color: #aeb002;
-}
+
 
 .sidebar_news {
     padding: 0 0 20px 0;
@@ -158,13 +164,56 @@ body {
 .sidebar_raiting-item {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 6px 0;
     list-style: none;
     padding: 0 0 4px 5px;
     line-height: 1.5em;
 }
 
+.content {
+    text-align: left;
+    width: 620px;
+    padding: 0 0 0 5px;
+}
 
+.content_title {
+    font: normal 170% 'century gothic', Arial, sans-serif;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+    
+}
+
+.content_films {
+    margin-bottom: 5%;
+}
+
+.content_img {
+    width: 23.805%;
+    border: 5px solid #dad7d5;
+    border-radius: 5px;
+}
+
+.content_serials {
+    margin-bottom: 5%;
+}
+.posts{
+    padding-bottom: 20px;
+}
+.posts_hr {
+    border: 1px solid #f3f3f3;
+}
+.posts_title{
+    font: normal 140% 'century gothic', Arial, sans-serif;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+}
+.posts_link{
+    text-decoration: none;
+}
+.posts_text{
+    font-size: 0.8em;
+    line-height: 1.7em;
+    padding: 0 0 20px 0;
+}
 
 
 .footer {
