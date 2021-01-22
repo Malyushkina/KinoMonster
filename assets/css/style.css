@@ -11,12 +11,12 @@ body {
 }
 
 .header {
-    background-color: darkslateblue;
     height: 177px;
-    font-size: 0.8em;
     margin-left: 0;
     margin-right: 0;
     min-width: 900px;
+    font-size: 0.8em;
+    background-color: darkslateblue;
 }
 
 .main,
@@ -93,7 +93,8 @@ body {
     text-decoration: none;
     color: #aeb002;
 }
-.link--sidebar{
+
+.link--sidebar {
     text-decoration: underline;
 }
 
@@ -179,7 +180,7 @@ body {
     font: normal 170% 'century gothic', Arial, sans-serif;
     margin: 0 0 15px 0;
     padding: 15px 0 5px 0;
-    
+
 }
 
 .content_films {
@@ -195,27 +196,42 @@ body {
 .content_serials {
     margin-bottom: 5%;
 }
-.posts{
+
+.posts {
     padding-bottom: 20px;
 }
+
 .posts_hr {
     border: 1px solid #f3f3f3;
 }
-.posts_title{
+
+.posts_title {
     font: normal 140% 'century gothic', Arial, sans-serif;
     margin: 0 0 15px 0;
     padding: 15px 0 5px 0;
 }
-.posts_link{
+
+.posts_link {
     text-decoration: none;
 }
-.posts_text{
+
+.posts_text {
     font-size: 0.8em;
     line-height: 1.7em;
     padding: 0 0 20px 0;
 }
-
-
+.movie_info{
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+.movie_specification{
+    font-size: 1.2em;
+}
+.movie_specification-value{
+    font-size: 1em;
+    color:#49945a;
+    margin-right: 3%;
+}
 .footer {
     width: 100%;
     height: 133px;

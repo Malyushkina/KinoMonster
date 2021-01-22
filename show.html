@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КиноМонстр</title>
+    <meta name="description" content="Киномонстр - это портал о кино" />
+    <meta name="keywords" content="фильмы, фильмы онлайн, hd" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="logo header_logo">
+                <div class="logo_text">
+                    <h1 class="logo_title"><a href="/" class="logo_link">КиноМонстр</a></h1>
+                    <h2 class="logo_subtitle">Кино - наша страсть!</h2>
+                </div>
+            </div>
+
+            <div class="menubar">
+                <ul class="menu">
+                    <li class="menu_item selected"><a href="#" class="menu_link">Главная</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Фильмы</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Сериалы</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Рейтинг фильмов</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
+                </ul>
+            </div>
+
+        </header>
+
+        <div class="site_content">
+            <div class="sidebar_container">
+                <div class="sidebar">
+                    <h2 class="sidebar_title">Поиск</h2>
+                    <form class="sidebar_form" method="POST" action="#" id="search_form">
+                        <input class="sidebar_input" type="search" placeholder="ваш запрос" name="search_field" />
+                        <input type="submit" class="btn" value="найти">
+
+                    </form>
+                </div>
+                <div class="sidebar">
+                    <h2 class="sidebar_title">Вход</h2>
+                    <form class="sidebar_form" method="POST" action="#" id="login_form">
+                        <input class="sidebar_input" type="text" placeholder="логин" name="login_field" />
+                        <input class="sidebar_input" type="password" placeholder="пароль" name="password_field" />
+                        <input type="submit" class="btn" value="вход">
+                        <div class="sidebar_lables">
+                            <span class="sidebar_text"><a href="#" class="link link--sidebar">забыли пароль?</a></span>
+                            |
+                            <span class="sidebar_text"><a href="#" class="link link--sidebar">регистрация</a></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="sidebar">
+                    <h2 class="sidebar_title">Новости</h2>
+                    <div class="sidebar_date">21/01/2021</div>
+                    <p class="sidebar_news">Мы запустили расширенный поиск</p>
+                    <a href="#" class="link link--sidebar">читать</a>
+                </div>
+                <div class="sidebar">
+                    <h2 class="sidebar_title">Рейтинг фильмов</h2>
+                    <ul class="sidebar_raiting">
+                        <li class="sidebar_raiting-item"><a href="#" class="link link--sidebar">Интерстеллар</a> <span
+                                class="sidebar_raining-number">8.1</span> </li>
+                        <li class="sidebar_raiting-item"><a href="#" class="link link--sidebar">Матрица</a><span
+                                class="sidebar_raining-number">6.3</span></li>
+                        <li class="sidebar_raiting-item"><a href="#" class="link link--sidebar">Безумный Макс</a><span
+                                class="sidebar_raining-number">5.9</span></li>
+                        <li class="sidebar_raiting-item"><a href="#" class="link link--sidebar">Облачный атлас</a><span
+                                class="sidebar_raining-number">5.2</span></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="content movie">
+                <h2 class="content_title">
+                    Интерстеллар
+                </h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qcPfI0y7wRU" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                    <div class="movie_info">
+                        <span class="movie_specification">рейтинг: </span><span class="movie_specification-value">8.1 / 10</span>
+                        <span class="movie_specification">год: </span><span class="movie_specification-value">2014</span>
+                        <span class="movie_specification">режиссёр: </span><span class="movie_specification-value">Кристофер Нолан</span>
+                    </div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p class="footer_menu">
+                <a href="#" class="footer_link">Главная</a> |
+                <a href="#" class="footer_link">Фильмы</a> |
+                <a href="#" class="footer_link">Сериалы</a> |
+                <a href="#" class="footer_link">Рейтинг фильмов</a> |
+                <a href="#" class="footer_link">Контакты</a>
+            </p>
+            <p class="footer_copyright">2021</p>
+        </footer>
+    </div>
+</body>
+
+</html>
