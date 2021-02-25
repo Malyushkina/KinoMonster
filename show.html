@@ -15,8 +15,8 @@
         <header class="header">
             <div class="logo header_logo">
                 <div class="logo_text">
-                    <h1 class="logo_title"><a href="/" class="logo_link">КиноМонстр</a></h1>
-                    <h2 class="logo_subtitle">Кино - наша страсть!</h2>
+                    <h1 class="title title--logo"><a href="/" class="logo_link">КиноМонстр</a></h1>
+                    <h2 class="title--subtitle">Кино - наша страсть!</h2>
                 </div>
             </div>
 
@@ -35,7 +35,7 @@
         <div class="site_content">
             <div class="sidebar_container">
                 <div class="sidebar">
-                    <h2 class="sidebar_title">Поиск</h2>
+                    <h2 class="title title--sidebar sidebar_title">Поиск</h2>
                     <form class="sidebar_form" method="POST" action="#" id="search_form">
                         <input class="sidebar_input" type="search" placeholder="ваш запрос" name="search_field" />
                         <input type="submit" class="btn" value="найти">
@@ -43,7 +43,7 @@
                     </form>
                 </div>
                 <div class="sidebar">
-                    <h2 class="sidebar_title">Вход</h2>
+                    <h2 class="title title--sidebar sidebar_title">Вход</h2>
                     <form class="sidebar_form" method="POST" action="#" id="login_form">
                         <input class="sidebar_input" type="text" placeholder="логин" name="login_field" />
                         <input class="sidebar_input" type="password" placeholder="пароль" name="password_field" />
@@ -56,13 +56,13 @@
                     </form>
                 </div>
                 <div class="sidebar">
-                    <h2 class="sidebar_title">Новости</h2>
+                    <h2 class="title title--sidebar sidebar_title">Новости</h2>
                     <div class="sidebar_date">21/01/2021</div>
                     <p class="sidebar_news">Мы запустили расширенный поиск</p>
                     <a href="#" class="link link--sidebar">читать</a>
                 </div>
                 <div class="sidebar">
-                    <h2 class="sidebar_title">Рейтинг фильмов</h2>
+                    <h2 class="title title--sidebar sidebar_title">Рейтинг фильмов</h2>
                     <ul class="sidebar_raiting">
                         <li class="sidebar_raiting-item"><a href="#" class="link link--sidebar">Интерстеллар</a> <span
                                 class="sidebar_raining-number">8.1</span> </li>
@@ -77,17 +77,48 @@
                 </div>
             </div>
             <div class="content movie">
-                <h2 class="content_title">
+                <h2 class="title content_title">
                     Интерстеллар
                 </h2>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/qcPfI0y7wRU" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                    <div class="movie_info">
-                        <span class="movie_specification">рейтинг: </span><span class="movie_specification-value">8.1 / 10</span>
-                        <span class="movie_specification">год: </span><span class="movie_specification-value">2014</span>
-                        <span class="movie_specification">режиссёр: </span><span class="movie_specification-value">Кристофер Нолан</span>
+                <div class="movie_info">
+                    <span class="movie_specification">рейтинг: </span><span class="movie_specification-value">8.1 /
+                        10</span>
+                    <span class="movie_specification">год: </span><span class="movie_specification-value">2014</span>
+                    <span class="movie_specification">режиссёр: </span><span class="movie_specification-value">Кристофер
+                        Нолан</span>
+                </div>
+                <hr class="hr">
+                <h2 class="title title--movie">Описание Интерстеллар</h2>
+                <div class="movie_description">
+                    <img src="./assets/img/inter.png" alt="Фильм Интерстеллар" class="movie_img">
+                    <div class="movie_text">
+                        Когда засуха приводит человечество к продовольственному кризису, коллектив исследователей и
+                        учёных отправляется сквозь червоточину (которая предположительно соединяет области
+                        пространства-времени через большое расстояние) в путешествие, чтобы превзойти прежние
+                        ограничения для космических путешествий человека и переселить человечество на другую планету.
                     </div>
+                </div>
+                <hr class="hr">
+                <h2 class="title title--movie">Отзывы об Интерстеллар</h2>
+                <div class="movie_reviews reviews">
+                    <div class="reviews-item review">
+                        <div class="review_name">Сергей</div>
+                        <div class="review_text">Отличный фильм, 3 часа пролетели не заметно.</div>
+                    </div>
+                    <div class="reviews-item review">
+                        <div class="review_name">Дмитрий</div>
+                        <div class="review_text">После фильма Начало, я с не терпением ждал еще работ от Кристофера
+                            Нолана. Интерстеллар меня впечатлил.</div>
+                    </div>
+                    <form method="POST" action="#" class="reviews_form" id="review">
+                        <input type="text" name="review_name" placeholder="ваше имя">
+                        <textarea name="review_text"></textarea>
+                        <input type="submit" class="btn btn--reviews" value="отправить">
+                    </form>
+                </div>
 
             </div>
         </div>

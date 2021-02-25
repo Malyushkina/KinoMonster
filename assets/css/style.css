@@ -33,13 +33,21 @@ body {
     padding-bottom: 40px;
 }
 
-.logo_title,
-.logo_subtitle {
+.title {
+    font-family: 'century gothic', Arial, sans-serif;
+    font-weight: normal;
+    color: #000000;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+}
+
+.title--logo,
+.title--subtitle {
     font: normal 300% 'century gothic', Arial, sans-serif;
     margin: 0 0 0 9px;
 }
 
-.logo_title,
+.title--logo,
 .logo_link,
 .logo_link:hover {
     padding: 22px 0 0 0;
@@ -48,12 +56,21 @@ body {
     text-decoration: none;
 }
 
-.logo_subtitle {
+.title--subtitle {
     font-size: 0.9em;
     padding: 4px 0 0 0;
     color: #999;
 }
+.title--posts {
+    font-size: 140%;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+}
 
+.title--movie {
+    color: #000000;
+    font-size: 140%;
+}
 .menubar {
     width: 900px;
     height: 46px;
@@ -121,8 +138,8 @@ body {
     background-color: #f9f9f9;
 }
 
-.sidebar_title {
-    font: normal 140% 'century gothic', Arial, sans-serif;
+.title--sidebar {
+    font-size: 140%;
     margin: 0 0 15px 0;
     padding: 15px 0 5px 0;
     color: #136cb2;
@@ -187,7 +204,8 @@ body {
     margin-bottom: 5%;
 }
 
-.content_img {
+.content_img,
+.movie_img {
     width: 23.805%;
     border: 5px solid #dad7d5;
     border-radius: 5px;
@@ -201,15 +219,11 @@ body {
     padding-bottom: 20px;
 }
 
-.posts_hr {
+.hr {
     border: 1px solid #f3f3f3;
 }
 
-.posts_title {
-    font: normal 140% 'century gothic', Arial, sans-serif;
-    margin: 0 0 15px 0;
-    padding: 15px 0 5px 0;
-}
+
 
 .posts_link {
     text-decoration: none;
@@ -220,18 +234,72 @@ body {
     line-height: 1.7em;
     padding: 0 0 20px 0;
 }
-.movie_info{
+
+.movie_info {
     margin-top: 2%;
     margin-bottom: 4%;
 }
-.movie_specification{
+
+.movie_specification {
     font-size: 1.2em;
 }
-.movie_specification-value{
+
+.movie_specification-value {
     font-size: 1em;
-    color:#49945a;
+    color: #49945a;
     margin-right: 3%;
 }
+.movie_description{
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.movie_img{
+    margin-right: 2%;
+    width: 160px;
+    height: 210px;
+}
+.reviews{
+    margin-bottom: 4%;
+    font-size: 0.9em;
+}
+.reviews-item{
+    padding-bottom: 2%;
+}
+.review_name{
+    background-color: #7268AD;
+    color: white;
+    padding: 1%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.review_text {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+}
+.reviews_form{
+    margin-bottom: 4%;
+}
+.reviews_form input[type="text"],
+.reviews_form textarea{
+    border: 1px solid #c3c3c3;
+    margin-bottom: 2%;
+    width: 98%;
+    padding: 2%;
+}
+.reviews_form textarea{
+    height: 200px;
+}
+.btn--reviews{
+    background-color: #7268AD;
+    padding: 3%;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
 .footer {
     width: 100%;
     height: 133px;
