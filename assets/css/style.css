@@ -61,6 +61,7 @@ body {
     padding: 4px 0 0 0;
     color: #999;
 }
+
 .title--posts {
     font-size: 140%;
     margin: 0 0 15px 0;
@@ -71,6 +72,7 @@ body {
     color: #000000;
     font-size: 140%;
 }
+
 .menubar {
     width: 900px;
     height: 46px;
@@ -168,8 +170,6 @@ body {
     margin-left: 2%;
 }
 
-
-
 .sidebar_news {
     padding: 0 0 20px 0;
     line-height: 1.7em;
@@ -189,7 +189,7 @@ body {
 
 .content {
     text-align: left;
-    width: 620px;
+    width: 625px;
     padding: 0 0 0 5px;
 }
 
@@ -205,7 +205,8 @@ body {
 }
 
 .content_img,
-.movie_img {
+.movie_img,
+.film_img {
     width: 23.805%;
     border: 5px solid #dad7d5;
     border-radius: 5px;
@@ -249,59 +250,105 @@ body {
     color: #49945a;
     margin-right: 3%;
 }
-.movie_description{
+
+.movie_description {
     margin-bottom: 10%;
     display: flex;
     justify-content: space-between;
 }
-.movie_img{
+
+.movie_img {
     margin-right: 2%;
     width: 160px;
     height: 210px;
 }
-.reviews{
+
+.reviews {
     margin-bottom: 4%;
     font-size: 0.9em;
 }
-.reviews-item{
+
+.reviews-item {
     padding-bottom: 2%;
 }
-.review_name{
+
+.review_name {
     background-color: #7268AD;
     color: white;
     padding: 1%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+
 .review_text {
     padding-top: 2%;
     padding-bottom: 2%;
     padding-left: 2%;
 }
-.send{
+
+.send {
     margin-bottom: 4%;
 }
+
 .send input[type="text"],
 .send input[type="email"],
-.send textarea{
+.send textarea {
     border: 1px solid #c3c3c3;
     margin-bottom: 2%;
     width: 98%;
     padding: 2%;
 }
-.send textarea{
+
+.send textarea {
     height: 200px;
 }
-.btn--send{
+
+.btn--send {
     background-color: #7268AD;
     padding: 3%;
     color: white;
     border-radius: 5px;
 }
-.contacts_offer{
+
+.contacts_offer {
     padding: 0 0 20px 0;
     line-height: 1.7em;
 }
+
+.film {position: relative;
+    margin-bottom: 5%;
+    background-color: #f9f9f9;
+    padding: 5%;
+    text-align: right;
+    min-height: 330px;
+}
+
+.film_img {
+    float: left;
+    margin-right: 2%;
+    width: 27%;
+}
+.film_description{
+    margin-bottom: 10%;
+    text-align: left;
+}
+
+.btn--film {
+    display: inline-block;
+    background-color: #7268AD;
+    padding: 11px;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+.film_link{
+    position: absolute;
+    bottom: 30px;
+    right: 5%;
+}
+
+
 
 
 .footer {
