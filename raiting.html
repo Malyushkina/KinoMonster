@@ -25,8 +25,8 @@
                     <li class="menu_item "><a href="index.html" class="menu_link">Главная</a></li>
                     <li class="menu_item"><a href="films.html" class="menu_link">Фильмы</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Сериалы</a></li>
-                    <li class="menu_item"><a href="raiting.html" class="menu_link">Рейтинг фильмов</a></li>
-                    <li class="menu_item selected"><a href="contacts.html" class="menu_link">Контакты</a></li>
+                    <li class="menu_item selected"><a href="#" class="menu_link">Рейтинг фильмов</a></li>
+                    <li class="menu_item "><a href="contacts.html" class="menu_link">Контакты</a></li>
                 </ul>
             </div>
 
@@ -77,16 +77,45 @@
                 </div>
             </div>
             <div class="content contacts">
-                <h2 class="title content_title">
-                    Контакты</h2>
-                    <p class="contacts_offer">Отправьте ваш отзыв о портале КиноМонстр</p>
-
-                <form method="POST" action="#" class="send" id="review">
-                    <input type="text" name="contacts_name" placeholder="ваше имя">
-                    <input type="email" name="contacts_email" placeholder="ваш email">
-                    <textarea name="contacts_text"></textarea>
-                    <input type="submit" class="btn btn--send" value="отправить">
-                </form>
+                <table class="raiting_table">
+                    <tr>
+                        <th colspan="2"> Фильм</th>
+                        <th>Год</th>
+                        <th>Рейтинг</th>
+                    </tr>
+                    <tr>
+                        <td class="raiting_data"><img src="./assets/img/inter.png" alt="Интерстеллар"
+                                class="raiting_img"></td>
+                        <td class="raiting_data raiting_film">1. <a href="show.html"
+                                class="link raiting_link">Интерстеллар</a> </td>
+                        <td class="raiting_data">2014</td>
+                        <td class="raiting_data raiting_num">8.1</td>
+                    </tr>
+                    <tr>
+                        <td class="raiting_data"><img src="./assets/img/matrix.png" alt="Матрица" class="raiting_img">
+                        </td>
+                        <td class="raiting_data raiting_film">2. <a href="show.html"
+                                class="link raiting_link">Матрица</a> </td>
+                        <td class="raiting_data">1999</td>
+                        <td class="raiting_data raiting_num">6.3</td>
+                    </tr>
+                    <tr>
+                        <td class="raiting_data"><img src="./assets/img/max.png" alt="Безумный макс"
+                                class="raiting_img"></td>
+                        <td class="raiting_data raiting_film">3. <a href="show.html" class="link raiting_link">Безумный
+                                макс</a> </td>
+                        <td class="raiting_data">2015</td>
+                        <td class="raiting_data raiting_num">5.9</td>
+                    </tr>
+                    <tr>
+                        <td class="raiting_data"><img src="./assets/img/cloud.png" alt="Облачный атлас"
+                                class="raiting_img"></td>
+                        <td class="raiting_data raiting_film">4. <a href="show.html" class="link raiting_link">Облачный
+                                атлас</a> </td>
+                        <td class="raiting_data">2013</td>
+                        <td class="raiting_data raiting_num">5.2</td>
+                    </tr>
+                </table>
             </div>
 
         </div>
