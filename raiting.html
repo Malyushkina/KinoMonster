@@ -7,121 +7,125 @@
     <title>КиноМонстр</title>
     <meta name="description" content="Киномонстр - это портал о кино" />
     <meta name="keywords" content="фильмы, фильмы онлайн, hd" />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
 </head>
 
-<body>
-    <div class="main">
-        <header class="header">
-            <div class="logo header_logo">
+<body class="page">
+    <div class="container">
+        <header class="page_header">
+            <div class="page_logo logo">
                 <div class="logo_text">
-                    <h1 class="title title--logo"><a href="/" class="logo_link">КиноМонстр</a></h1>
-                    <h2 class="title--subtitle">Кино - наша страсть!</h2>
+                    <h1>Киномонстр - это портал о кино</h1>
+                    <a class="logo_link" href="/" class="logo_link">КиноМонстр</a>
+                    <p class="logo_subtitle">Кино - наша страсть!</p>
                 </div>
             </div>
 
-            <div class="menubar">
-                <ul class="menu">
-                    <li class="menu_item "><a href="index.html" class="menu_link">Главная</a></li>
+            <nav class="page_menu menu">
+                <ul class="menu_list">
+                    <li class="menu_item selected"><a href="#" class="menu_link">Главная</a></li>
                     <li class="menu_item"><a href="films.html" class="menu_link">Фильмы</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Сериалы</a></li>
-                    <li class="menu_item selected"><a href="#" class="menu_link">Рейтинг фильмов</a></li>
-                    <li class="menu_item "><a href="contacts.html" class="menu_link">Контакты</a></li>
+                    <li class="menu_item"><a href="raiting.html" class="menu_link">Рейтинг фильмов</a></li>
+                    <li class="menu_item"><a href="contacts.html" class="menu_link">Контакты</a></li>
                 </ul>
-            </div>
+            </nav>
 
         </header>
 
-        <div class="site_content">
-            <div class="sidebar_container">
-                <div class="sidebar">
-                    <h2 class="title title--sidebar sidebar_title">Поиск</h2>
+        <div class="page_content">
+            <section class="sidebar">
+                <div class="sidebar_item">
+                    <h3 class="sidebar_title">Поиск</h3>
                     <form class="sidebar_form" method="POST" action="#" id="search_form">
                         <input class="sidebar_input" type="search" placeholder="ваш запрос" name="search_field" />
                         <input type="submit" class="btn" value="найти">
 
                     </form>
                 </div>
-                <div class="sidebar">
-                    <h2 class="title title--sidebar sidebar_title">Вход</h2>
+                <div class="sidebar_item">
+                    <h3 class="sidebar_title">Вход</h3>
                     <form class="sidebar_form" method="POST" action="#" id="login_form">
                         <input class="sidebar_input" type="text" placeholder="логин" name="login_field" />
                         <input class="sidebar_input" type="password" placeholder="пароль" name="password_field" />
-                        <input type="submit" class="btn" value="вход">
-                        <div class="sidebar_lables">
-                            <span class="sidebar_text"><a href="#" class="link link--sidebar">забыли пароль?</a></span>
+                        <input type="submit" class="sidebar_btn btn" value="вход">
+                        <div class="sidebar_labels">
+                            <span class="sidebar_text"><a href="#" class="sidebar_link">забыли пароль?</a></span>
                             |
-                            <span class="sidebar_text"><a href="#" class="link link--sidebar">регистрация</a></span>
+                            <span class="sidebar_text"><a href="#" class="sidebar_link">регистрация</a></span>
                         </div>
                     </form>
                 </div>
-                <div class="sidebar">
-                    <h2 class="title title--sidebar sidebar_title">Новости</h2>
+                <div class="sidebar_item">
+                    <h3 class="sidebar_title">Новости</h3>
                     <div class="sidebar_date">21/01/2021</div>
                     <p class="sidebar_news">Мы запустили расширенный поиск</p>
-                    <a href="#" class="link link--sidebar">читать</a>
+                    <a href="#" class="sidebar_link">читать</a>
                 </div>
-                <div class="sidebar">
-                    <h2 class="title title--sidebar sidebar_title">Рейтинг фильмов</h2>
+                <div class="sidebar_item">
+                    <h3 class="sidebar_title">Рейтинг фильмов</h3>
                     <ul class="sidebar_raiting">
-                        <li class="sidebar_raiting-item"><a href="#" class="link link--sidebar">Интерстеллар</a> <span
+                        <li class="sidebar_raiting-item"><a href="#" class="sidebar_link">Интерстеллар</a> <span
                                 class="sidebar_raining-number">8.1</span> </li>
-                        <li class="sidebar_raiting-item"><a href="#" class="link link--sidebar">Матрица</a><span
+                        <li class="sidebar_raiting-item"><a href="#" class="sidebar_link">Матрица</a><span
                                 class="sidebar_raining-number">6.3</span></li>
-                        <li class="sidebar_raiting-item"><a href="#" class="link link--sidebar">Безумный Макс</a><span
+                        <li class="sidebar_raiting-item"><a href="#" class="sidebar_link">Безумный Макс</a><span
                                 class="sidebar_raining-number">5.9</span></li>
-                        <li class="sidebar_raiting-item"><a href="#" class="link link--sidebar">Облачный атлас</a><span
+                        <li class="sidebar_raiting-item"><a href="#" class="sidebar_link">Облачный атлас</a><span
                                 class="sidebar_raining-number">5.2</span></li>
 
                     </ul>
                 </div>
-            </div>
-            <div class="content raiting">
-                <table class="raiting_table">
-                    <tr>
-                        <th class="raiting_column-title" colspan="2"> Фильм</th>
-                        <th class="raiting_column-title">Год</th>
-                        <th class="raiting_column-title">Рейтинг</th>
-                    </tr>
-                    <tr>
-                        <td class="raiting_data"><img src="./assets/img/inter.png" alt="Интерстеллар"
-                                class="raiting_img"></td>
-                        <td class="raiting_data raiting_film">1. <a href="show.html"
-                                class="link raiting_link">Интерстеллар</a> </td>
-                        <td class="raiting_data">2014</td>
-                        <td class="raiting_data raiting_num">8.1</td>
-                    </tr>
-                    <tr>
-                        <td class="raiting_data"><img src="./assets/img/matrix.png" alt="Матрица" class="raiting_img">
-                        </td>
-                        <td class="raiting_data raiting_film">2. <a href="show.html"
-                                class="link raiting_link">Матрица</a> </td>
-                        <td class="raiting_data">1999</td>
-                        <td class="raiting_data raiting_num">6.3</td>
-                    </tr>
-                    <tr>
-                        <td class="raiting_data"><img src="./assets/img/max.png" alt="Безумный макс"
-                                class="raiting_img"></td>
-                        <td class="raiting_data raiting_film">3. <a href="show.html" class="link raiting_link">Безумный
-                                макс</a> </td>
-                        <td class="raiting_data">2015</td>
-                        <td class="raiting_data raiting_num">5.9</td>
-                    </tr>
-                    <tr>
-                        <td class="raiting_data"><img src="./assets/img/cloud.png" alt="Облачный атлас"
-                                class="raiting_img"></td>
-                        <td class="raiting_data raiting_film">4. <a href="show.html" class="link raiting_link">Облачный
-                                атлас</a> </td>
-                        <td class="raiting_data">2013</td>
-                        <td class="raiting_data raiting_num">5.2</td>
-                    </tr>
-                </table>
-            </div>
-
+            </section>
+            <main class="page_content content">
+                <section class="content_section raiting">
+                    <h2>Рейтинг</h2>
+                    <table class="raiting_table">
+                        <tr>
+                            <th class="raiting_column-title" colspan="2"> Фильм</th>
+                            <th class="raiting_column-title">Год</th>
+                            <th class="raiting_column-title">Рейтинг</th>
+                        </tr>
+                        <tr>
+                            <td class="raiting_data"><img src="./assets/img/inter.png" alt="Интерстеллар"
+                                    class="raiting_img"></td>
+                            <td class="raiting_data raiting_film">1. <a href="show.html"
+                                    class="content_link">Интерстеллар</a> </td>
+                            <td class="raiting_data">2014</td>
+                            <td class="raiting_data raiting_num">8.1</td>
+                        </tr>
+                        <tr>
+                            <td class="raiting_data"><img src="./assets/img/matrix.png" alt="Матрица"
+                                    class="raiting_img">
+                            </td>
+                            <td class="raiting_data raiting_film">2. <a href="show.html"
+                                    class="content_link">Матрица</a> </td>
+                            <td class="raiting_data">1999</td>
+                            <td class="raiting_data raiting_num">6.3</td>
+                        </tr>
+                        <tr>
+                            <td class="raiting_data"><img src="./assets/img/max.png" alt="Безумный макс"
+                                    class="raiting_img"></td>
+                            <td class="raiting_data raiting_film">3. <a href="show.html" class="content_link">Безумный
+                                    макс</a> </td>
+                            <td class="raiting_data">2015</td>
+                            <td class="raiting_data raiting_num">5.9</td>
+                        </tr>
+                        <tr>
+                            <td class="raiting_data"><img src="./assets/img/cloud.png" alt="Облачный атлас"
+                                    class="raiting_img"></td>
+                            <td class="raiting_data raiting_film">4. <a href="show.html" class="content_link">Облачный
+                                    атлас</a> </td>
+                            <td class="raiting_data">2013</td>
+                            <td class="raiting_data raiting_num">5.2</td>
+                        </tr>
+                    </table>
         </div>
+        </section>
+        </main>
     </div>
 
-    <footer class="footer">
+    <footer class="page_footer footer">
         <p class="footer_menu">
             <a href="index.html" class="footer_link">Главная</a> |
             <a href="films.html" class="footer_link">Фильмы</a> |

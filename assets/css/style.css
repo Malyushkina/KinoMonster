@@ -10,7 +10,7 @@ body {
     color: #555;
 }
 
-.header {
+.page_header {
     height: 177px;
     margin-left: 0;
     margin-right: 0;
@@ -19,13 +19,9 @@ body {
     background-color: darkslateblue;
 }
 
-.main,
-.logo,
-.menubar,
-.site_content,
-.footer {
-    margin-left: auto;
-    margin-right: auto;
+.container {
+    margin: 0 auto;
+    width: 320px;
 }
 
 .logo {
@@ -402,7 +398,7 @@ body {
     color: #fff;
 }
 
-/* css mobile */
+/* css mobile
 @media only screen and (min-device-width: 320px) and (max-device-width: 567px) {
     .header {
         background-color: #257965;
@@ -557,9 +553,11 @@ body {
     .logo {
         width: 100%;
     }
-    .menubar{
+
+    .menubar {
         width: 100%;
     }
+
     .site_content {
         flex-direction: column;
         width: 100%;
@@ -573,11 +571,12 @@ body {
         padding: 5%;
         justify-content: space-around;
     }
-    .sidebar{
+
+    .sidebar {
         padding: 0;
         padding-left: 3%;
         padding-right: 3%;
-    } 
+    }
 
     .content {
         width: 100%;
@@ -627,7 +626,8 @@ body {
     .link--read {
         font-size: 80%;
     }
-    .footer{
+
+    .footer {
         min-width: 100%;
     }
-}
+} */
