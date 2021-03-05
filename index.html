@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -7,145 +7,170 @@
     <title>КиноМонстр</title>
     <meta name="description" content="Киномонстр - это портал о кино" />
     <meta name="keywords" content="фильмы, фильмы онлайн, hd" />
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="source/css/normalize.css">
+    <link rel="stylesheet" href="source/css/style.css">
 </head>
 
-<body class="page">
-    <div class="container">
-        <header class="page_header">
-            <div class="page_logo logo">
-                <div class="logo_text">
-                    <h1>Киномонстр - это портал о кино</h1>
-                    <a class="logo_link" href="/" class="logo_link">КиноМонстр</a>
-                    <p class="logo_subtitle">Кино - наша страсть!</p>
+<body class="page-body">
+    <header class="page-header">
+        <div class="container">
+            <div class="page-header__logo logo">
+                <div class="logo__text">
+                    <a class="logo__link" href="/" class="logo__link">КиноМонстр</a>
+                    <p class="logo__subtitle">Кино - наша страсть!</p>
                 </div>
             </div>
 
-            <nav class="page_menu menu">
-                <ul class="menu_list">
-                    <li class="menu_item selected"><a href="#" class="menu_link">Главная</a></li>
-                    <li class="menu_item"><a href="films.html" class="menu_link">Фильмы</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Сериалы</a></li>
-                    <li class="menu_item"><a href="raiting.html" class="menu_link">Рейтинг фильмов</a></li>
-                    <li class="menu_item"><a href="contacts.html" class="menu_link">Контакты</a></li>
+            <nav class="page-header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item menu__item--active"><a href="#" class="menu__link">Главная</a></li>
+                    <li class="menu__item"><a href="films.html" class="menu__link">Фильмы</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Сериалы</a></li>
+                    <li class="menu__item"><a href="raiting.html" class="menu__link">Рейтинг фильмов</a></li>
+                    <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
                 </ul>
             </nav>
+            <button class="page-header__toggle hamburger">
+                <span class="visually-hidden">открыть сайдбар</span>
+            </button>
+        </div>
+    </header>
 
-        </header>
-
-        <div class="page_content">
+    <div class="page-content">
+        <h1 class="visually-hidden">Киномонстр - это портал о кино</h1>
+        <div class="container">
             <section class="sidebar">
-                <div class="sidebar_item">
-                    <h3 class="sidebar_title">Поиск</h3>
-                    <form class="sidebar_form" method="POST" action="#" id="search_form">
-                        <input class="sidebar_input" type="search" placeholder="ваш запрос" name="search_field" />
-                        <input type="submit" class="btn" value="найти">
+                <div class="sidebar__item ">
+                    <h3 class="sidebar__title">Поиск</h3>
+                    <form class="sidebar__form" method="POST" action="#" id="search__form">
+                        <input class="sidebar__input" type="search" placeholder="ваш запрос" name="search__field" />
+                        <input type="submit" class="btn btn--sidebar" value="найти">
 
                     </form>
                 </div>
-                <div class="sidebar_item">
-                    <h3 class="sidebar_title">Вход</h3>
-                    <form class="sidebar_form" method="POST" action="#" id="login_form">
-                        <input class="sidebar_input" type="text" placeholder="логин" name="login_field" />
-                        <input class="sidebar_input" type="password" placeholder="пароль" name="password_field" />
-                        <input type="submit" class="sidebar_btn btn" value="вход">
-                        <div class="sidebar_labels">
-                            <span class="sidebar_text"><a href="#" class="sidebar_link">забыли пароль?</a></span>
+                <div class="sidebar__item">
+                    <h3 class="sidebar__title">Вход</h3>
+                    <form class="sidebar__form" method="POST" action="#" id="login__form">
+                        <input class="sidebar__input" type="text" placeholder="логин" name="login__field" />
+                        <input class="sidebar__input" type="password" placeholder="пароль" name="password__field" />
+                        <input type="submit" class="btn btn--sidebar" value="вход">
+                        <div class="sidebar__labels">
+                            <span class="sidebar__text"><a href="#" class="sidebar__link">забыли пароль?</a></span>
                             |
-                            <span class="sidebar_text"><a href="#" class="sidebar_link">регистрация</a></span>
+                            <span class="sidebar__text"><a href="#" class="sidebar__link">регистрация</a></span>
                         </div>
                     </form>
                 </div>
-                <div class="sidebar_item">
-                    <h3 class="sidebar_title">Новости</h3>
-                    <div class="sidebar_date">21/01/2021</div>
-                    <p class="sidebar_news">Мы запустили расширенный поиск</p>
-                    <a href="#" class="sidebar_link">читать</a>
+                <div class="sidebar__item">
+                    <h3 class="sidebar__title">Новости</h3>
+                    <div class="sidebar__date">21/01/2021</div>
+                    <p class="sidebar__text">Мы запустили расширенный поиск</p>
+                    <a href="#" class="sidebar__link">читать</a>
                 </div>
-                <div class="sidebar_item">
-                    <h3 class="sidebar_title">Рейтинг фильмов</h3>
-                    <ul class="sidebar_raiting">
-                        <li class="sidebar_raiting-item"><a href="#" class="sidebar_link">Интерстеллар</a> <span
-                                class="sidebar_raining-number">8.1</span> </li>
-                        <li class="sidebar_raiting-item"><a href="#" class="sidebar_link">Матрица</a><span
-                                class="sidebar_raining-number">6.3</span></li>
-                        <li class="sidebar_raiting-item"><a href="#" class="sidebar_link">Безумный Макс</a><span
-                                class="sidebar_raining-number">5.9</span></li>
-                        <li class="sidebar_raiting-item"><a href="#" class="sidebar_link">Облачный атлас</a><span
-                                class="sidebar_raining-number">5.2</span></li>
+                <div class="sidebar__item">
+                    <h3 class="sidebar__title">Рейтинг фильмов</h3>
+                    <ul class="sidebar__raiting">
+                        <li class="sidebar__raiting-item"><a href="#" class="sidebar__link">Интерстеллар</a> <span
+                                class="sidebar__raining-number">8.1</span> </li>
+                        <li class="sidebar__raiting-item"><a href="#" class="sidebar__link">Матрица</a><span
+                                class="sidebar__raining-number">6.3</span></li>
+                        <li class="sidebar__raiting-item"><a href="#" class="sidebar__link">Безумный Макс</a><span
+                                class="sidebar__raining-number">5.9</span></li>
+                        <li class="sidebar__raiting-item"><a href="#" class="sidebar__link">Облачный атлас</a><span
+                                class="sidebar__raining-number">5.2</span></li>
 
                     </ul>
                 </div>
             </section>
-            <main class="page_content content">
-                <section class="content_section">
-                    <h2 class="content_title">
+            <main class="content">
+                <section class="content__section">
+                    <h2 class="content__title">
                         Новые фильмы
                     </h2>
-                    <div class="content_wrapper">
-                        <a href="#" class="content_link"><img src="/assets/img/matrix.png" alt="фильм Матрица"
-                                class="content_img"></a>
-                        <a href="#" class="content_link"><img src="/assets/img/max.png" alt="фильм Безумный Макс"
-                                class="content_img"></a>
-                        <a href="#" class="content_link"><img src="/assets/img/inter.png" alt="фильм Интерстеллар"
-                                class="content_img"></a>
-                        <a href="#" class="content_link"><img src="/assets/img/cloud.png" alt="фильм Облачный атлас"
-                                class="content_img"></a>
+                    <div class="content__wrapper">
+                        <a href="#" class="content__link"><img src="/source/img/matrix.png" alt="фильм Матрица"
+                                class="content__img"></a>
+                        <a href="#" class="content__link"><img src="/source/img/max.png" alt="фильм Безумный Макс"
+                                class="content__img"></a>
+                        <a href="#" class="content__link"><img src="/source/img/inter.png" alt="фильм Интерстеллар"
+                                class="content__img"></a>
+                        <a href="#" class="content__link"><img src="/source/img/cloud.png" alt="фильм Облачный атлас"
+                                class="content__img"></a>
                     </div>
                 </section>
-                <section class="content_section">
-                    <h2 class="content_title">
+                <section class="content__section">
+                    <h2 class="content__title">
                         Новые сериалы
                     </h2>
-                    <div class="content_wrapper">
-                        <a href="#" class="content_link"><img src="/assets/img/dead.png" alt="фильм Матрица"
-                                class="content_img"></a>
-                        <a href="#" class="content_link"><img src="/assets/img/silicon.png" alt="фильм Безумный Макс"
-                                class="content_img"></a>
-                        <a href="#" class="content_link"><img src="/assets/img/breakingbad.png" alt="фильм Интерстеллар"
-                                class="content_img"></a>
-                        <a href="#" class="content_link"><img src="/assets/img/xfiles.png" alt="фильм Облачный атлас"
-                                class="content_img"></a>
+                    <div class="content__wrapper">
+                        <a href="#" class="content__link"><img src="/source/img/dead.png" alt="сериал Ходячие мертвецы"
+                                class="content__img"></a>
+                        <a href="#" class="content__link"><img src="/source/img/silicon.png"
+                                alt="сериал Силиконовая долина" class="content__img"></a>
+                        <a href="#" class="content__link"><img src="/source/img/breakingbad.png"
+                                alt="сериал Во все тяжкие" class="content__img"></a>
+                        <a href="#" class="content__link"><img src="/source/img/xfiles.png"
+                                alt="сериал Секретные материалы" class="content__img"></a>
                     </div>
                     <hr class="hr">
                 </section>
-                <article class="content_posts posts">
-                    <div class="content_post">
-                        <h2 class="content_title"><a href="#" class="content_link">Как снимали
-                                Интерстеллар</a></h2>
-                        <p class="content_text">45 лет исполнилось Кристоферу Нолану — одному из самых успешных
-                            режиссеров
-                            нашего времени, чьи работы одинаково любимы как взыскательными критиками, так и простыми
-                            зрителями. Фильмом изначально занималась студия Paramount. Когда Кристофер Нолан занял место
-                            режиссера, студия Warner Bros., которая выпускала его последние фильмы, добилась участия в
-                            проекте.</p>
+                <article class="content__posts posts">
+                    <div class="posts__wrapper slider">
+                        <div class="content__post-item post slider-item">
+                            <h2 class="content__title"><a href="#" class="content__link">Как снимали
+                                    Интерстеллар</a></h2>
+                            <p class="content__text">45 лет исполнилось Кристоферу Нолану — одному из самых успешных
+                                режиссеров
+                                нашего времени, чьи работы одинаково любимы как взыскательными критиками, так и
+                                простыми
+                                зрителями. Фильмом изначально занималась студия Paramount. Когда Кристофер Нолан
+                                занял
+                                место
+                                режиссера, студия Warner Bros., которая выпускала его последние фильмы, добилась
+                                участия
+                                в
+                                проекте.</p>
 
-                        <a href="#" class="content_link">читать</a>
-                        <hr class="hr">
-                    </div>
-                    <div class="content_post">
-                        <h2 class="content_title"><a href="#" class="content_link">Актер Том Хенкс
-                                поделился впечатлением о фестивале</a></h2>
-                        <p class="posts_text">16 февраля в Лондоне состоялась 67-я церемония вручения наград Британской
-                            киноакадемии. Леонардо ДиКаприо, Брэд Питт, Анджелина Джоли, Кейт Бланшетт, Хелен Миррен,
-                            Эми Адамс, Кристиан Бэйл, Альфонсо Куарон и другие гости и победители премии — в нашем
-                            репортаже.</p>
-                        <a href="#" class="content_link">читать</a>
+                            <a href="#" class="content__link">читать</a>
+                            <hr class="hr">
+                        </div>
+                        <div class="content__post-item post slider-item">
+                            <h2 class="content__title"><a href="#" class="content__link">Актер Том Хенкс
+                                    поделился впечатлением о фестивале</a></h2>
+                            <p class="content__text">16 февраля в Лондоне состоялась 67-я церемония вручения наград
+                                Британской
+                                киноакадемии. Леонардо ДиКаприо, Брэд Питт, Анджелина Джоли, Кейт Бланшетт, Хелен
+                                Миррен,
+                                Эми Адамс, Кристиан Бэйл, Альфонсо Куарон и другие гости и победители премии — в
+                                нашем
+                                репортаже.</p>
+                            <a href="#" class="content__link">читать</a>
+                        </div>
+                        <button class="posts__prev" type="button">Предыдущий отзыв</button>
+                        <button class="posts__next" type="button">Следующий отзыв</button>
+                        <p class="posts__toggles slider__toggles">
+                            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+                            <button class="slider__toggle" type="button">2</button>
+                            <button class="slider__toggle" type="button">3</button>
+                        </p>
                     </div>
                 </article>
             </main>
         </div>
+    </div>
 
-        <footer class="page_footer footer">
-            <p class="footer_menu">
-                <a href="index.html" class="footer_link">Главная</a> |
-                <a href="films.html" class="footer_link">Фильмы</a> |
-                <a href="#" class="footer_link">Сериалы</a> |
-                <a href="raiting.html" class="footer_link">Рейтинг фильмов</a> |
-                <a href="contacts.html" class="footer_link">Контакты</a>
+    <footer class="page-footer footer">
+        <div class="container">
+            <p class="footer__menu">
+                <a href="index.html" class="footer__link">Главная</a> |
+                <a href="films.html" class="footer__link">Фильмы</a> |
+                <a href="#" class="footer__link">Сериалы</a> |
+                <a href="raiting.html" class="footer__link">Рейтинг фильмов</a> |
+                <a href="contacts.html" class="footer__link">Контакты</a>
             </p>
-            <p class="footer_copyright">2021</p>
-        </footer>
+            <p class="footer__copyright">2021</p>
+        </div>
+    </footer>
     </div>
 </body>
 
